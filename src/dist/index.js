@@ -39,7 +39,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const path_1 = __importStar(require("path"));
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
-const port = 3000;
+const port = 3050;
 const pj = path_1.default.join;
 app.use('/', express_1.default.static(pj((0, path_1.dirname)(__dirname), 'public')));
 app.listen(port, () => {
