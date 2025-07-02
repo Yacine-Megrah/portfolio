@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
+        
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="https://i.pinimg.com/736x/99/db/0a/99db0a8a6f4b0f3f3663e1b48229e0b1.jpg" alt="Logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#nav-sec-1" class="content-toggle" aria-controls="#about-section">Home</a></li>
+                    <element></element>
+                    <li><a href="#nav-sec-2" class="content-toggle" aria-controls="#about-section">About</a></li>
+                    <element></element>
+                    <li><a href="">Projects</a></li>
+                    <element></element>
+                    <li><a href="#nav-sec-4">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="nav-sec-1" class="target-content" aria-disabled="true">
+            <div class="hero">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Explore my work and projects.</p>
+            
+            </div>
+        </div>
+
+        <div id="nav-sec-2" class="target-content" aria-disabled="true">
+            <div class="about-section">
+                <iframe class="resume-frame" src="http://localhost:3600/dl/doc-1.pdf" title="Resume"></iframe>
+                <a href="http://localhost:3600/dl/doc-1.pdf"><h4>download ⬇️</h4></a>
+            </div>
+        </div>
+        
+        <div id="nav-sec-3" class="target-content" aria-disabled="true">
+            <div class="projects-section">
+                <h1>My Projects</h1>
+                <p>Here are some of my projects...</p>
+            </div>
+        </div>
+
+        <div id="nav-sec-4" class="target-content" aria-disabled="true">
+            <div class="contact-section">
+                <h1>Contact Me</h1>
+                <p>If you want to get in touch, feel free to reach out!</p>
+
+                <div class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="315b162f-7388-44dd-a3e8-28a2d8940513">
+
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" autocomplete="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" autocomplete="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="3" required></textarea>
+                        
+                        <button type="submit">Send 📨</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+    </body>
+    
+    
+</html>
