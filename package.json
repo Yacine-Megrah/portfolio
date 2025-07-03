@@ -1,22 +1,23 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "description": "Yacine Megrah, portfolio web app.",
-  "license": "ISC",
-  "author": "Yacine-Megrah",
-  "type": "commonjs",
-  "main": "index.js",
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "A simple Express server for portfolio hosting",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "npx tsc",
-    "start": "node dist/index.js",
-    "dev": "nodemon src/index.ts"
+    "launch": "node dist/index.js",
+    "start:dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "dev": "nodemon --watch src --ext ts --exec ts-node src/index.ts",
+    "render-start": "npm run build && npm run launch"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@types/express": "^5.0.3",
-    "express": "^5.0.3",
-    "@types/node": "^24.0.7",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.0.0"
   }
 }
